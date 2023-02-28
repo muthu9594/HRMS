@@ -24,5 +24,5 @@ const HolidaySchema = mongoose.Schema({
 },{timestamps:true})
 
 
-const Holidays = mongoose.Model('Holiday',HolidaySchema);
+const Holidays = mongoose.model('Holiday',HolidaySchema);
 module.exports=Holidays;

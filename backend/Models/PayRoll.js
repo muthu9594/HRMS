@@ -33,5 +33,5 @@ const payRollSchema = mongoose.Schema({
 },{timestamps:true})
 
 
-const PayRoll = mongoose.Model('PayRoll',payRollSchema);
+const PayRoll = mongoose.model('PayRoll',payRollSchema);
 module.exports = PayRoll;

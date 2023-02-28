@@ -7,7 +7,7 @@ const {addJobDetails,deleteJobDetails,EditJobDetails,getJobDetails}=require("../
 const {addLeaveDetails,deleteLeaveDetails,EditLeaveDetails,getLeaveDetails}=require("../Controller/LeaveManagementController")
 const {addOrganizationDetails,deleteOrganizationDetails,EditOrganizationDetails,getOrganizationDetails}=require("../Controller/OrganizationController")
 const {addPayRollDetails,deletePayRollDetails,EditPayRollDetails,getPayRollDetails}=require("../Controller/PayRollController")
-
+const {signupUser, loginUser}  = require("../Controller/UserController")
 
 
 
@@ -44,5 +44,8 @@ router.post('/deleteLeave/:id',deleteLeaveDetails);
 router.post('/deleteOrganization/:id',deleteOrganizationDetails);
 router.post('/deletePayRoll/:id',deletePayRollDetails);
 
+
+router.post('/signup',signupUser);
+router.post('/login',loginUser);
 
 module.exports=router;
